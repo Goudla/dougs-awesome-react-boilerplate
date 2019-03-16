@@ -48,5 +48,21 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/index.js",
+      "!src/serviceWorker.js"
+    ],
+    "coverageThreshold": {
+     "global": {
+       "branches": 90,
+       "functions": 90,
+       "lines": 90,
+       "statements": 90
+     }
+   }
   }
 }
