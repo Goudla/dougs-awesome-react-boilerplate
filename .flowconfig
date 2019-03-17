@@ -1,11 +1,18 @@
 [ignore]
+.*/node_modules/.*
+.*/build/.*
+.*/coverage/.*
+.*/src/index.js
+.*/src/serviceWorker.js
 
 [include]
 
 [libs]
+flow-typed
 
 [lints]
 
 [options]
+all=true
 
 [strict]
